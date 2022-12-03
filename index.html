@@ -9,14 +9,16 @@
   <form id="productForm">
     <div class="g-recaptcha" data-sitekey="6LdRSFAjAAAAAGlPjYoIHtwYEuWeibmJPMSacrlT"></div>
     <br />
-    <input type="submit" value="Submit">
+    <button onClick="onSubmit">Submit</button>
   </form>
   <script>
+    function onSubmit(token) {
     let form = document.querySelector('#productForm')
 
     let data = getFormData(form)
 
     console.log(JSON.stringify(data))
+    }
   </script>
 </body>
 
