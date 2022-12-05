@@ -15,7 +15,9 @@
       const q = new URLSearchParams(document.location.search);
       const response = q.get('g-recaptcha-response');
       if (response === '') {
-        window.location.replace = '/help.html'
+        setTimeout(() => {
+          window.location.replace = '/help.html'
+        }, 1000);
       }
   </script>
 </body>
