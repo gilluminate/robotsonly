@@ -16,8 +16,8 @@
       const response = q.get('g-recaptcha-response');
       if (response === '') {
         setTimeout(() => {
-          window.location.replace = '/help.html'
-        }, 1000);
+          window.location = '/help.html'
+        }, 500);
       }
   </script>
 </body>
