@@ -3,13 +3,6 @@
 <head>
   <title>reCAPTCHA demo: Simple page</title>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script>
-      const q = new URLSearchParams(document.location.search);
-      const response = q.get('g-recaptcha-response');
-      if (response === '') {
-        window.location.replace = '/help.html'
-      }
-  </script>
 </head>
 
 <body>
@@ -18,6 +11,13 @@
     <br />
     <button onClick="onSubmit">Submit</button>
   </form>
+  <script>
+      const q = new URLSearchParams(document.location.search);
+      const response = q.get('g-recaptcha-response');
+      if (response === '') {
+        window.location.replace = '/help.html'
+      }
+  </script>
 </body>
 
 </html>
