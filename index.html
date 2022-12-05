@@ -7,7 +7,7 @@
       const q = new URLSearchParams(document.location.search);
       const response = q.get('g-recaptcha-response');
       if (response === '') {
-        document.href = '/help.html'
+        window.location.replace = '/help.html'
       }
   </script>
 </head>
